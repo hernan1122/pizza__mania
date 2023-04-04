@@ -1,0 +1,24 @@
+{
+  "name": "pizza__mania",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hernan1122/pizza__mania.git"
+  },
+  "keywords": [],
+  "author": "Axel Torrico <torricohernan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hernan1122/pizza__mania/issues"
+  },
+  "homepage": "https://github.com/hernan1122/pizza__mania#readme",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
