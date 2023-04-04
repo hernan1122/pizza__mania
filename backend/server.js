@@ -2,15 +2,25 @@ const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
+import { PORT } from './config.js';
+import {
+  DB_HOST,
+  DB_USER,
+  DB_PASSWORD,
+  DB_PORT,
+  DB_NAME
+} from './config.js';
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'axel',
-  database: 'pizzamania'
+  host: DB_HOST,
+  user: DB_USER,
+  password: DB_PASSWORD,
+  port: DB_PORT,
+  database: DB_NAME
 })
 
 app.post('/signup', (req, res) => {
@@ -69,6 +79,6 @@ app.get('/comunity', (req, res) => {
   })
 })
 
-app.listen(8081, () => {
-  console.log('listening connection, axel');
+app.listen(PORT, () => {
+  console.log('Server on port ', PORT);
 })
