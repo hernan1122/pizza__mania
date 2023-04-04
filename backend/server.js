@@ -1,7 +1,6 @@
-const express = require('express');
-const mysql = require('mysql');
-const cors = require('cors');
-
+import express from 'express'
+import mysql from 'mysql'
+import cors from 'cors'
 import {
   PORT,
   DB_HOST,
