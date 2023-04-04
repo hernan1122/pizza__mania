@@ -2,8 +2,8 @@ const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
-import { PORT } from './config.js';
 import {
+  PORT,
   DB_HOST,
   DB_USER,
   DB_PASSWORD,
